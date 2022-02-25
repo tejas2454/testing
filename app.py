@@ -7,12 +7,12 @@ from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
 
-json_file = open('/Users/tejas1.gaikwad/Downloads/model_1.json', 'r')
+json_file = open('model_1.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
 # load weights into new model
-loaded_model.load_weights("/Users/tejas1.gaikwad/Downloads/model_2.h5")
+loaded_model.load_weights("model_2.h5")
 
 @app.route('/')
 def home():
