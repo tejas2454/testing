@@ -1,5 +1,4 @@
-# testing
-Sample application to test deployment of models. 
+# Sample application to test deployment of models. 
 
 This implementation is docker based deployment of done on fashio_mnist dataset. This is very basic code to new entrants to undersand docker based deployments. 
 
